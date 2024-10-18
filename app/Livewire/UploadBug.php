@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Forms\Form;
@@ -25,7 +26,7 @@ class UploadBug extends Component implements HasForms
     {
         return $form
             ->schema([
-                //
+                FileUpload::make('file'),
             ])
             ->statePath('data');
     }
