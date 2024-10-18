@@ -1,4 +1,7 @@
 # Reproduction repo for Filament FileUpload bug
 
-- Install `composer`
-- Run `php artisan dusk`
+```bash
+composer install
+php artisan dusk:chrome-driver
+php artisan dusk
+```
