@@ -1,12 +1,9 @@
 <?php
 
-pest()->extend(Tests\DuskTestCase::class)
-//  ->use(Illuminate\Foundation\Testing\DatabaseMigrations::class)
+pest()
+    ->extend(Tests\DuskTestCase::class)
     ->in('Browser');
 
-pest()->extend(Tests\DuskTestCase::class)
-//  ->use(Illuminate\Foundation\Testing\DatabaseMigrations::class)
-    ->in('Browser');
 
 /*
 |--------------------------------------------------------------------------
